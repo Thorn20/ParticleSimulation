@@ -43,7 +43,11 @@ namespace ParticleSimulation
             float xx = (float)(X / Sim.Scale);
             float yy = (float)(Y / Sim.Scale);
 
-            g.FillEllipse( new SolidBrush(Color.Black), xx - 2.5f, yy - 2.5f, 5f, 5f); 
+            Color color;
+            if (C < 0) color = Color.Black;
+            else color = Color.Red;
+
+            g.FillEllipse( new SolidBrush(color), xx - 2.5f, yy - 2.5f, 5f, 5f); 
         } 
     }
 }

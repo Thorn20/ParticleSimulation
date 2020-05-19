@@ -16,7 +16,7 @@ namespace ParticleSimulation
         {
             this.p = p;
 
-            MakeParticles( 200 );
+            MakeParticles( 100 );
         }
 
         public void MakeParticles(int count)
